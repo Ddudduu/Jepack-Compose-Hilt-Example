@@ -1,7 +1,20 @@
 buildscript {
     ext {
         compose_version = '1.0.1'
-        hilt_version = '2.38.1'
+        hilt_version = '2.40.5'
+    }
+    // dependencies 나 configurations 둘 중 하나 추가하면됨
+    // hilt 2.40.5 실행 시 발생하는 오류때문에 추가
+//    dependencies {
+//        classpath "com.squareup:javapoet:1.13.0"
+//    }
+
+    configurations.all {
+        resolutionStrategy.eachDependency {
+            if(requested.name == "javapoet"){
+                useVersion("1.13.0")
+            }
+        }
     }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
