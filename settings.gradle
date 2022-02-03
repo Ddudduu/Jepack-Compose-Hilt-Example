@@ -9,7 +9,7 @@ pluginManagement {
             if (requested.id.id == 'dagger.hilt.android.plugin') {
                 // 2.40.1 까지는 실행됨.
                 // 그 이상은 Unable to find method ''java.lang.String com.squareup.javapoet.ClassName.canonicalName() 오류 발생
-                useModule("com.google.dagger:hilt-android-gradle-plugin:2.40.5")
+                useModule("com.google.dagger:hilt-android-gradle-plugin:2.40.1")
             }
         }
     }

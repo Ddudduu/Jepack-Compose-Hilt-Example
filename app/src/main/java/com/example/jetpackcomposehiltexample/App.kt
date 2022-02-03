@@ -1,4 +1,4 @@
-package com
+package com.example.jetpackcomposehiltexample
 
 import android.app.Application
 import com.example.jetpackcomposehiltexample.BuildConfig
